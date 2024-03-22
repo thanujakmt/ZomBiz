@@ -1,7 +1,7 @@
 
 import client1 from "/images/client/testimonial1.jpg"
-import { ClientData } from "../../../data/home_data/ClientsData";
-import Clientsays from "../../../../../zombiz/src/sub_client_components/Clientsays";
+import { ClientData } from "../../../data/home_data/ClientsData"
+import Clientsays from "../sub_component/Clientsays"
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
