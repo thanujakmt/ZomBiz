@@ -1,5 +1,5 @@
 
-import { BiSolidQuoteLeft } from ".react-icons/bi";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function Clientsays(props) {
     return (
