@@ -13,10 +13,6 @@ function Navbar() {
     const handburgerHandler = () => {
         setActive(!isActive)
     }
-
-    const closeNav = () => {
-        setActive(!isActive)
-    }
     
     return (
         <>
@@ -40,15 +36,15 @@ function Navbar() {
                 </div>
                 <div className={`menu ${isActive ? "h-[300px]" : "h-[0px]"} transition-all ease-in-out duration-500 overflow-auto w-[100%] bg-liteblue absolute md:top-[150px]  top-[200px]`}>
                     <ul className={`text-white m-6 `}>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/">Home</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/About">About</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/Service">Service</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/Project">Project</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/Team">Team</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/Blog">Blog</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><Link to="/contact">Contact</Link></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><LuShoppingCart className="text-[1.2em]" /></li>
-                        <li className="m-3 cursor-pointer hover:font-medium" onClick={closeNav} ><CiSearch className="text-[1.2em]" /></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/">Home</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/About">About</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/Service">Service</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/Project">Project</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/Team">Team</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/Blog">Blog</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><Link to="/contact">Contact</Link></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><LuShoppingCart className="text-[1.2em]" /></li>
+                        <li className="m-3 cursor-pointer hover:font-medium" onClick={handburgerHandler} ><CiSearch className="text-[1.2em]" /></li>
                     </ul>
                 </div>
             </div>
