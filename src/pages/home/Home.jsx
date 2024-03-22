@@ -7,10 +7,10 @@ import Counter from './sub_component/Counter';
 import Ourfinishedprojects from "./sub_component/Ourfinishedprojects.jsx"
 import ExpertTeam from './sub_component/Expertteam';
 import Ourpricingtable from './sub_component/Ourpricingtable';
-import Client from '../../../../zombiz/src/Client';
-import Clientswithlogo from '../../../../zombiz/src/Clientswithlogo';
-import Ourlatestnews from '../../../../zombiz/src/Ourlatestnews';
-import Contactus from '../../../../zombiz/src/Contactus';
+import Client from './sub_component/Client.jsx'
+import Clientswithlogo from './sub_component/Clientswithlogo.jsx'
+import Ourlatestnews from './sub_component/Ourlatestnews.jsx'
+import Contactus from './sub_component/Contactus.jsx'
 
 function Home(props) {
     return (
