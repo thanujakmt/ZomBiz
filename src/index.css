@@ -1,0 +1,66 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .mainCardWrapper{
+        @apply relative flex items-center justify-center;
+    }
+
+    .childCard{
+        @apply transition-all ease-in-out duration-700 overflow-hidden;
+    }
+
+    .mainCardWrapper .childCard{
+        @apply min-h-[0px] min-w-[0px] h-[0px] w-[0px] bg-bg_color1 z-50 absolute flex items-center justify-center  ;
+    }
+
+    .mainCardWrapper:hover .childCard{
+        @apply min-h-full min-w-full
+    }
+
+    .mainCardWrapper:hover img{
+        transform: scale(1.2);
+    }
+
+    .learn{
+        @apply h-0
+    }
+
+    .main:hover .learn{
+        @apply h-6 transition-all ease-in-out duration-700
+    }
+
+    .blogs .image_opacity{
+        @apply absolute w-0 h-0 min-h-0 min-w-0 bg-bg_color1 z-10;
+    }
+
+    .blogs{
+        @apply flex items-center justify-center flex-col;
+    }
+
+    .blogs:hover img{
+        transform: scaley(1.1);
+        transition: all ease-in-out 0.5s;
+    }
+
+    .blogs:hover .image_opacity{
+        transform: scaley(1.1);
+        transition: all ease-in-out 0.5s;
+        @apply min-h-[380px] min-w-[360px] mt-[-120px]; 
+    }
+
+    .blogs:hover .icon{
+       @apply visible;
+    }
+
+    .icon{
+        @apply invisible;
+    }
+
+}
