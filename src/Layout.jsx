@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { Outlet } from "react-router-dom";
+import Scrolltoup from './components/Scrolltoup';
 
 function Layout(props) {
     return (
@@ -19,6 +20,7 @@ function Layout(props) {
                 <div className=''>
                     <Footer />
                 </div>
+                <Scrolltoup/>
             </div>
         </>
     );
